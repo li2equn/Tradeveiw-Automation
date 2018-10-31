@@ -58,51 +58,7 @@ class au10tix(object):
         self._this_page = self._driver.page_source
         time.sleep(1)
         #wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/article/ng-view/div/section[2]/div[2]')))
-        
-        ################################################################################
-# =============================================================================
-#         self._driver.find_element_by_xpath('/html/body/div/article/ng-view/div/section[2]/div[2]').click()
-#             #WebDriverWait(self._driver, 60).until(lambda x: x.find_element_by_xpath('/html/body/div/article/ng-view/div/section[2]/div[2]')).click()
-#             
-#         self._driver.find_element_by_xpath('/html/body/div/article/ng-view/div/section[2]/div[2]/div/ul/li/a').click()
-#             
-#         self._result = BeautifulSoup(self._this_page,'lxml').find('span', class_ = 'ng-binding').text
-#             
-#     #        try:
-#     #            pdf_url = 'https://www.au10tixportalusa.com'+BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent['href']
-#             #download_dir = baseDir+emailname+'/' # for linux/*nix, download_dir="/usr/Public"
-#             #self._driver.get(pdf_url)
-#         
-#             
-#     #            self._downloadname = re.findall(r"\d/(.+).pdf", pdf_url)[0]
-#                 
-#     #        except:
-#         #unreadable id
-#     #            self._downloadname = 'Unreadable+Unreadable+Unreadable'
-#                 
-#             #pdf_url = 'https://www.au10tixportalusa.com'+BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent['href']
-#             #print(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent)
-#             #print(pdf_url)
-#             #print(re.findall(r"\d/(.+).pdf", pdf_url))
-#         wait.until(EC.presence_of_element_located((By.XPATH, "//*[text()='PDF']")))
-#             #print(str(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent))
-#         self._downloadname = re.findall(r"\d/(.+).pdf", str(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent))[0]
-#             #self._downloadname = re.findall(r"\d/(.+).pdf", pdf_url)[0]
-#             #old = max([f for f in os.listdir(filepath)], key=os.path.getctime)
-#             
-#             
-#         old = filepath+self._downloadname+ '.pdf'
-#             #print(old)
-#         while not os.path.exists(old):
-#             time.sleep(1)
-#                 
-#         newfilepath = filepath+os.path.basename(os.path.dirname(filepath))+'-Au10tix.pdf'
-#         if not os.path.exists( newfilepath ):
-#             os.rename(old,newfilepath )
-#         else:
-#             print('File '+os.path.basename(os.path.dirname(filepath))+'-Au10tix.pdf'+' exists.')
-# =============================================================================
-            #####################################################################
+
         try:
             self._driver.find_element_by_xpath('/html/body/div/article/ng-view/div/section[2]/div[2]').click()
             #WebDriverWait(self._driver, 60).until(lambda x: x.find_element_by_xpath('/html/body/div/article/ng-view/div/section[2]/div[2]')).click()
@@ -111,22 +67,7 @@ class au10tix(object):
             
             self._result = BeautifulSoup(self._this_page,'lxml').find('span', class_ = 'ng-binding').text
             
-    #        try:
-    #            pdf_url = 'https://www.au10tixportalusa.com'+BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent['href']
-            #download_dir = baseDir+emailname+'/' # for linux/*nix, download_dir="/usr/Public"
-            #self._driver.get(pdf_url)
-        
-            
-    #            self._downloadname = re.findall(r"\d/(.+).pdf", pdf_url)[0]
-                
-    #        except:
-        #unreadable id
-    #            self._downloadname = 'Unreadable+Unreadable+Unreadable'
-                
-            #pdf_url = 'https://www.au10tixportalusa.com'+BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent['href']
-            #print(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent)
-            #print(pdf_url)
-            #print(re.findall(r"\d/(.+).pdf", pdf_url))
+
             wait.until(EC.presence_of_element_located((By.XPATH, "//*[text()='PDF']")))
             #print(str(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent))
             self._downloadname = re.findall(r"\d/(.+).pdf", str(BeautifulSoup(self._this_page,'lxml').find(text='PDF').parent))[0]
