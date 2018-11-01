@@ -31,8 +31,8 @@ class Test_identityMind(unittest.TestCase):
         
        print(FullName)
        print(mess.getEmailAddress())
-       username = 'bsadgrove@tvmarkets.com'
-       password = 'Tr3ad$eViEw18'
+       username = '00000000'
+       password = '00000000'
        address = 'https://edna.identitymind.com/merchantedna'
        
        im = IdentityMind.identityMind(address, username, password)
