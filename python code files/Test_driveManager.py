@@ -14,27 +14,27 @@ class Test_driveManager(unittest.TestCase):
         
         DM = DriveManager.driveManager()   
 # =============================================================================
-#         print('get foldre ID')
-#         print(DM.getFolderID('MT5 Accounts'))
-#         
-#         print('get file id')
-#         print(DM.getFileID(' 323523>>Xin Liu>>ID translation'))
-#         
-#         print('get all folders in mt4 account')
-#         print(DM.getAllFolders('MT4 accounts'))
-#         
-#         print('get all files in the folder')
-#         print(DM.getAllFiles('705046 KAZUTAKA ARITOMI'))
-#         
-#         print('create folder')
-#         DM.CreateFolder('test')
-#         
-#         time.sleep(5)
-#         print('check existence of created folder')
-#         print(DM.CheckFolderExistence('test'))
-#         #DM.UploadFile('test','C:/Users/Intern/Desktop/','tradeview_logo.png')
-#         print('create the same folder')
-#         DM.CreateFolder('test')
+        print('get foldre ID')
+        print(DM.getFolderID('MT5 Accounts'))
+        
+        print('get file id')
+        print(DM.getFileID(' 323523>>Xin Liu>>ID translation'))
+        
+        print('get all folders in mt4 account')
+        print(DM.getAllFolders('MT4 accounts'))
+        
+        print('get all files in the folder')
+        print(DM.getAllFiles('705046 KAZUTAKA ARITOMI'))
+        
+        print('create folder')
+        DM.CreateFolder('test')
+        
+        time.sleep(5)
+        print('check existence of created folder')
+        print(DM.CheckFolderExistence('test'))
+        #DM.UploadFile('test','C:/Users/Intern/Desktop/','tradeview_logo.png')
+        print('create the same folder')
+        DM.CreateFolder('test')
 # =============================================================================
         DM.CopyRiskMatrix('Munemichi Ishikawa')
         
