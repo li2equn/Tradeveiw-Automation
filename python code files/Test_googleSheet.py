@@ -16,8 +16,7 @@ class Test_GoogleSheet(unittest.TestCase):
     def test_googlesheet(self):
         
         values = [
-          ['166cae07e4b68791', 'Individual Agreement - IB# 1604 - 1541001342-KZvmU', 'Toshifumi Nakata', 'towelieeeee1000@gmail.com', 'Japan', 'Toshifumi Nakata-ID.jpg', 'Toshifumi Nakata-AddressScreenshot.png', 'Passed', 'Toshifumi Nakata-IdentityMind.pdf', 'Toshifumi Nakata-WorldCheck.pdf', 'MT4 accounts JAPAN']
-           
+          ['1','dsafgsef','awetgae','ergaer']
             ]
         
         
