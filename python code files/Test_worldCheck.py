@@ -24,7 +24,7 @@ class Test_worldCheck(unittest.TestCase):
         
         G = MessageManager.gmail('2018/10/22','credentials_gmail1')
         #ID = '1668cdc8f9dada84'
-        ID ='1668da875689cf28' #input not valid
+        #ID ='1668da875689cf28' #input not valid
         ID = '166944d8763e33bb'
         mess = MessageManager.emailMessage(ID,G)
         mess.downloadAttachment()
@@ -36,8 +36,8 @@ class Test_worldCheck(unittest.TestCase):
         
         
         
-        username = 'TVmarkets'
-        password = 'Tv431smt!'
+        username = '00000000'
+        password = '00000000'
         address = 'https://app.accelus.com/#accelus/fsp/case/539728a9-5215-4dd3-9728-e964c12af110/view/worldcheck'
         wc = WorldCheck.worldCheck(address, username, password)
         wc.Process(baseDir+FullName+'/',mess,FullName)
