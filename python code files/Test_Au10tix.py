@@ -27,8 +27,8 @@ class Test_Au10tix(unittest.TestCase):
         FullName =  mess.getFullName()
         print(FullName)
         fM.FormatName(mess.getFullName())
-        username = 'W.Chung@tvmarkets.com'
-        password = '83@h#k#0i65@'
+        username = '000000'
+        password = '000000'
         address = 'https://www.au10tixportalusa.com/VanillaRest/'
         
         filepath = baseDir + FullName +'/'
