@@ -57,8 +57,8 @@ class individualAgreement(object):
         
         #self._receivedDate = self._message.get
         #Au10tix
-        bosusername = 'W.Chung@tvmarkets.com'
-        bospassword = '83@h#k#0i65@'
+        bosusername = '00000000'
+        bospassword = '00000000'
         bosaddress = 'https://www.au10tixportalusa.com/VanillaRest/'        
         self._filepath = filemanager.getbaseDir() +self._FullName+'/'
         filename = filemanager.getIDfilename(self._FullName)
@@ -66,14 +66,14 @@ class individualAgreement(object):
         
         
         #world check
-        wcusername = 'TVmarkets'
-        wcpassword = 'Tv431smt!'
+        wcusername = '00000000'
+        wcpassword = '00000000'
         wcaddress = 'https://app.accelus.com/#accelus/fsp/case/539728a9-5215-4dd3-9728-e964c12af110/view/worldcheck'
         
         
         #IdentityMind
-        imusername = 'bsadgrove@tvmarkets.com'
-        impassword = 'Tr3ad$eViEw18'
+        imusername = '00000000'
+        impassword = '00000000'
         imaddress = 'https://edna.identitymind.com/merchantedna'
         
         if not filename:
